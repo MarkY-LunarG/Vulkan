@@ -74,6 +74,7 @@ public:
 	bool rayQueryOnly = false;
 
 	void enableExtensions();
+	void enableVersion(uint8_t major, uint8_t minor);
 	ScratchBuffer createScratchBuffer(VkDeviceSize size);
 	void deleteScratchBuffer(ScratchBuffer& scratchBuffer);
 	void createAccelerationStructure(AccelerationStructure& accelerationStructure, VkAccelerationStructureTypeKHR type, VkAccelerationStructureBuildSizesInfoKHR buildSizeInfo);

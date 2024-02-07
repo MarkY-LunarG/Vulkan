@@ -107,6 +107,11 @@ void VulkanRaytracingSample::enableExtensions()
 	enabledDeviceExtensions.push_back(VK_KHR_SHADER_FLOAT_CONTROLS_EXTENSION_NAME);
 }
 
+void VulkanRaytracingSample::enableVersion(uint8_t major, uint8_t minor)
+{
+	apiVersion = VK_MAKE_API_VERSION(0, major, minor, 0);
+}
+
 VulkanRaytracingSample::ScratchBuffer VulkanRaytracingSample::createScratchBuffer(VkDeviceSize size)
 {
 	ScratchBuffer scratchBuffer{};

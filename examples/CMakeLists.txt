@@ -138,6 +138,7 @@ set(EXAMPLES
 	raytracinggltf
 	raytracingintersection
 	raytracingreflections
+	raytracingreflectionsdesctemplates
 	raytracingsbtdata
 	raytracingshadows
 	raytracingtextures

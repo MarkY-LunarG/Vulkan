@@ -655,5 +655,11 @@ namespace vks
 			return writeDescriptorSetAccelerationStructureKHR;
 		}
 
+		inline VkDescriptorUpdateTemplateCreateInfoKHR descriptorUpdateTemplateCreateInfo()
+		{
+			VkDescriptorUpdateTemplateCreateInfoKHR descriptorUpdateTemplateCreateInfo{};
+			descriptorUpdateTemplateCreateInfo.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_CREATE_INFO_KHR;
+			return descriptorUpdateTemplateCreateInfo;
+		}
 	}
 }
